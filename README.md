@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/socialnews/app.png?label=ready&title=Ready)](https://waffle.io/socialnews/app)
 # Social News
 A multi-app system for crowdsourcing breaking news by scanning social media.
 
