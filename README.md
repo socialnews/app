@@ -1,4 +1,4 @@
-# Newsworthy
+# Social News
 A multi-app system for crowdsourcing breaking news by scanning social media.
 
 ## Hypothesis
@@ -20,7 +20,7 @@ A rails app which handles user authentication (twitter Oauth) and stores the use
 ### Client
 Javascript client which renders the user interface
 
-### Twitter Worker
+### Feeder (Twitter)
 Receives tasks (with twitter access token attached) from the hub, manages rate limits and queries and sends the data to the aggregator
 
 ### Aggregator
