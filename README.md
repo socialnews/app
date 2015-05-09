@@ -2,6 +2,8 @@
 [![Join the chat at https://gitter.im/joshuavial/sustain](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/socialnews?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Social News
+
+[![Join the chat at https://gitter.im/socialnews/app](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/socialnews/app?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A multi-app system for crowdsourcing breaking news by scanning social media.
 
 ## Hypothesis
