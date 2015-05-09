@@ -1,18 +1,24 @@
-[submodule "feeder-twitter"]
-	path = feeder-twitter
-	url = https://github.com/socialnews/feeder-twitter
-[submodule "publisher"]
-	path = publisher
-	url = https://github.com/socialnews/publisher
-[submodule "ranker"]
-	path = ranker
-	url = https://github.com/socialnews/ranker
 [submodule "aggregator"]
 	path = aggregator
 	url = https://github.com/socialnews/aggregator
+  branch = master
 [submodule "client"]
 	path = client
 	url = https://github.com/socialnews/client
+  branch = master
+[submodule "feeder-twitter"]
+	path = feeder-twitter
+	url = https://github.com/socialnews/feeder-twitter
+  branch = master
 [submodule "hub"]
 	path = hub
 	url = https://github.com/socialnews/hub
+  branch = master
+[submodule "publisher"]
+	path = publisher
+	url = https://github.com/socialnews/publisher
+  branch = master
+[submodule "ranker"]
+	path = ranker
+	url = https://github.com/socialnews/ranker
+  branch = master
