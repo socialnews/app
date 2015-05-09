@@ -1,0 +1,28 @@
+{
+  "name": "social-news",
+  "version": "0.0.0",
+  "description": "Distributed link aggregator for crowd editing news",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/socialnews/app"
+  },
+  "keywords": [
+    "news"
+  ],
+  "author": "Joshua Vial <joshua@enspiral.com> (http://joshuavial.com/)",
+  "license": "unlicense",
+  "bugs": {
+    "url": "https://github.com/socialnews/app/issues"
+  },
+  "homepage": "https://github.com/socialnews/app"
+}
