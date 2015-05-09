@@ -1,4 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/socialnews/app.png?label=ready&title=Ready)](https://waffle.io/socialnews/app)
+[![Join the chat at https://gitter.im/joshuavial/sustain](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/socialnews?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Social News
 A multi-app system for crowdsourcing breaking news by scanning social media.
 
