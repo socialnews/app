@@ -4,6 +4,13 @@
 # Social News
 A multi-app system for crowdsourcing breaking news by scanning social media.
 
+## Installing
+```
+npm install
+npm i -g gulp
+gulp pull
+```
+
 ## Hypothesis
 By creating an engaging game which rewards people for finding and sharing news we can agreggate lots of 'micro-editing decisions' into real time news streams that break both break social media echo chambers and remain relevant to a readers interests.
 
