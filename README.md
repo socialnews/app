@@ -6,9 +6,14 @@ A multi-app system for crowdsourcing breaking news by scanning social media.
 
 ## Installing
 ```
+git clone --recursive http://github.com/socialnews/app
 npm install
 npm i -g gulp
 gulp update --all
+```
+Make sure you clone the repo with --recursive to get the submodules. If you miss this step you can add the submodules to your repo with
+```
+git submodule update --init --recursive
 ```
 
 ## Hypothesis
