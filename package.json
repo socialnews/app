@@ -9,7 +9,8 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "lodash": "^3.8.0",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "yargs": "^3.10.0"
   },
   "scripts": {
     "test": "npm test"

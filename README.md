@@ -8,7 +8,7 @@ A multi-app system for crowdsourcing breaking news by scanning social media.
 ```
 npm install
 npm i -g gulp
-gulp pull
+gulp update --all
 ```
 
 ## Hypothesis
