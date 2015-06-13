@@ -16,7 +16,12 @@ module.exports = function(params, callback) {
     var submodule = argv.app
     exec('name='+submodule+' && '+command, {cwd: './' + submodule}, done)
   } else {
-    console.log("gulp test --all #test all submodules")
-    console.log("gulp test --app <appname> #test one submodule")
+    if(params.helpCallback) {
+      params.helpCallback()
+    } else {
+      var task = this.seq.slice(-1)[0]
+      console.log("gulp "+task+" --all #"+task +" all submodules")
+      console.log("gulp "+task+" --app <submodule_name> #"+task +" test one submodule")
+    }
   }
 }
