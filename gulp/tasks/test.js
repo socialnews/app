@@ -1,9 +1,9 @@
 var gulp = require('gulp')
-var submodules = require('../lib/gulp-git-submodules')
+var task = require('gulp-git-submodule').task
 
 gulp.task('test', function(done) {
   params = {
     command: 'printf "${name}: " && ./bin/test',
   }
-  submodules.task.call(this, params, done) 
+  task.call(this, params, done) 
 })

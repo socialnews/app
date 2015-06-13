@@ -12,6 +12,8 @@
 */
 
 var requireDir = require('require-dir');
+var gulp = require('gulp')
+var submodule = require('gulp-git-submodule')
 
-// Require all tasks in gulp/tasks, including subfolders
+submodule.registerTasks(gulp)
 requireDir('./gulp/tasks', { recurse: true });
