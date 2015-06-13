@@ -13,21 +13,19 @@ function task (params, callback) {
     }
   }
   if (argv.help || argv.h) {
-    if(params.helpCallback) {
-      params.helpCallback()
-    } 
-    var task = this.seq.slice(-1)[0]
-    console.log("gulp "+task+" # call "+task +" all submodules")
-    console.log("gulp "+task+" -o <submodule> --only <submodule> # call "+task +" on only the named submodules")
-    console.log("gulp "+task+" -e <submodule> --except <submodule> # call "+task +" on all except the named submodules")
+    displayHelp.call(this, params)
   } else {
-    targetSubmodules(function (modules) {
-      for(var i in modules) {
-        var submodule = modules[i]
-        exec('name='+submodule+' && '+command, {cwd: './' + submodule}, done)
-      }
-    })
+    executeCommand(command, done)
   }
+}
+
+function executeCommand (command, done) {
+  targetSubmodules(function (modules) {
+    for(var i in modules) {
+      var submodule = modules[i]
+      exec('name='+submodule+' && '+command, {cwd: './' + submodule}, done)
+    }
+  })
 }
 
 function targetSubmodules(done) {
@@ -70,4 +68,14 @@ function addItemOrArray(array, itemOrArray) {
     array.push(itemOrArray)
   }
   return array
+}
+
+function displayHelp(params) {
+  if(params.helpCallback) {
+    params.helpCallback()
+  } 
+  var task = this.seq.slice(-1)[0]
+  console.log("gulp "+task+" # call "+task +" all submodules")
+  console.log("gulp "+task+" -o <submodule> --only <submodule> # call "+task +" on only the named submodules")
+  console.log("gulp "+task+" -e <submodule> --except <submodule> # call "+task +" on all except the named submodules")
 }
