@@ -1,14 +1,12 @@
 var gulp = require('gulp')
-var exec = require('child_process').exec
+var spawn = require('child_process').spawn
+
+var child = require('child_process');
 
 function install (done) {
-  exec('git submodule install --init', function (error, stdout, stderr) {
-    if (error) {
-      console.log(stderr)
-    } else {
-      console.log(stdout)
-    }
-  })
+  var child = spawn('git', ['submodule', 'update', '--init', '--recursive']);
+  child.stdout.on("end", function() { done() });
+  child.stdout.pipe(process.stdout)
 }
 
 install.description = "install all submodules"
