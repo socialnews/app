@@ -1,7 +1,6 @@
 var gulp = require('gulp')
 var argv = require('yargs').argv
 var exec = require('child_process').exec
-var _ = require('lodash')
 
 var submodules = ['aggregator', 'client','feeder-twitter', 'hub', 'ranker' ]
 
@@ -20,6 +19,3 @@ gulp.task('update', function() {
     console.log("gulp update --app <appname> #update one submodule")
   }
 })
-
-var tasks = _.map(submodules, function(submodule) {return 'update-' + submodule})
-gulp.task('update-all', tasks)
